@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    transition: all 0.55s ease;
+
+}
+
+:root{
+    --primary-color: white;
+    --secondary-color: black;
+    --bg-color: #a5b6f7;
+}
+
+body {
+    background-color: var(--bg-color);
+    transition: all .55s ease;
+}
+
+#container {
+    display: grid;
+    grid-row: 1fr;
+    margin: auto;
+    width: 22cm;
+    padding-top: 100px;
+}
+
+#nomargin {
+    margin: 0 0 18pt 0;
+}
+
+.folha {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+    font-size: 12pt;
+    background-color: white;
+    height: 32.5cm;
+    margin-bottom: 10px;
+    padding: 3cm 2cm 2cm 3cm;
+    line-height: 20pt;
+}
+
+.folha1 {
+    margin-top: 100px;
+}
+
+.folha h1 {
+    margin: 18pt 0 18pt 0;
+    font-size: 12pt;
+    font-weight: 100;
+}
+
+.folha .semEspaco {
+    text-indent: 0;
+}
+
+.paragrafo {
+    text-indent: 2cm;
+}
+
+.folha .tituloSec {
+    font-size: 12pt;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+#semMargem {
+    margin-top: 0;
+}
+
+.folha .tituloPrim {
+    font-size: 12pt;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.conteudoTerc {
+    font-size: 12pt;
+    font-weight: 0;
+    text-indent: 0;
+}
+
+h1.conteudoTerc {
+    font-weight: bold;
+}
+
+.figura {
+    margin: 18pt 0 18pt 0;
+    text-align: center;
+}
+
+#tamanhoImg {
+    height: 235px;
+}
+
+#tamanhoImgT {
+    height: 500px;
+}
+
+#tamanhoImgS {
+    height: 290px;
+}
+
+#Imgfuncoes{
+    height: 350px;
+}
+
+.folha .Imgreação {
+    height: 100px;
+}
+
+#fontetabela2 {
+    margin-left: 5.4cm;
+}
+
+.figura .tamanhoImgL {
+    height: 200px;
+}
+
+.figura .tabela {
+    height: 140px;
+}
+
+#fontetabela1 {
+    margin-left: 4.6cm;
+}
+
+#fonteDif {
+    margin-left: 1.5cm;
+}
+
+#fontefuncoes{
+    margin-left: 2.3cm;
+}
+
+#fonteL {
+    margin-left: 4.6cm;
+}
+
+#fonteL2 {
+    margin-left: 3.5cm;
+}
+
+#fonteL3 {
+    margin-left: 3.9cm;
+}
+
+ .folha .espacamento {
+    margin-top: 18pt;
+}
+.fontrea {
+    margin-left: 5cm;
+    font-size: 10pt;
+    text-align: left;
+    margin-top: 0%;
+}
+
+.figura .font10 {
+    font-size: 10pt;
+    text-align: left;
+    margin-left: 2cm;
+    margin-top: 0px;
+}
+
+.figura img {
+    height: 190px;
+}
+
+.figura .cm4 {
+    margin-left: 4cm;
+}
+
+hr {
+    height: 2cm;
+    border: 2px solid transparent;
+}
+
+.folha ul li {
+    margin-left: 50px;
+
+}
+
+.marginTop18 {
+    margin-top: 18pt;
+}
+
+.folha .referencia {
+    text-align: center;
+    font-weight: bold;
+
+
+}
+
+.folha .referenciaM p {
+    font-size: 12pt;
+    text-align: left;
+    line-height: 12pt;
+    padding-top: 12pt;
+}
+
+.folha .semTop {
+    margin-top: 0;
+}
+
+#cima {
+    margin-top: 0;
+}
+
+/* MENU */
+
+#menu {
+    left: -100px;
+    text-align: right;
+    width: 100%;
+    z-index: 999;
+    cursor: pointer;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+    transition: all 0.55s ease;
+}
+
+#menu ul {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-flex;
+    background-color: var(--primary-color);
+}
+
+#menu ul li {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: all 0.55s ease;
+}
+
+.margin40 {
+    margin: 40px 0 0 50px;
+}
+
+#menu ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+#menu ul li:hover {
+    transform: translateX(-10px);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+#menu ul li ul {
+    padding: 20px;
+    text-align: left;
+    left: -1300px   ;
+    padding-top: 30px;
+    display: none;
+    position: absolute;
+    background-color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+#menu ul li ul li {
+    padding-bottom: 40px;
+}
+
+#menu ul li:hover ul {
+    display: flex;
+    margin: 0px;
+}
+
+.bx {
+    font-size: 15px;
+}
+
+
+
+header {
+    display: flex;
+    background-color: var(--primary-color);
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    border-bottom: 2px solid black;
+    color: black;
+}
